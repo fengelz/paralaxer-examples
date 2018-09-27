@@ -10,13 +10,25 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        docHeight: document.body.getBoundingClientRect().height - window.innerHeight
+        docHeight: document.body.getBoundingClientRect().height - window.innerHeight - 50
       })
     }, 1000)
+
+    window.addEventListener('scroll', this.onScroll)
   }
+
+  onScroll() {
+    document.webkitExitFullscreen();
+    document.exitFullscreen();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+  
   render() {
     if(this.state.docHeight === 0) {
-      return <div>Loading...</div>
+      return <div>Just a sec...</div>
     }
     return (
       <div className="App">
