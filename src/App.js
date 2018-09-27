@@ -20,7 +20,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-      <Paralaxer start={0} end={this.state.docHeight}>
+      <Paralaxer start={0} end={this.state.docHeight / 1.5}>
         <h1 
         style={{ transformOrigin: 'top left'}}
         animation={{
