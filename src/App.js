@@ -35,66 +35,73 @@ class App extends Component {
         <h1 
         style={{ transformOrigin: 'center'}}
         animation={{
-          from:{ transform: 'rotate(180deg) skew(0deg) scale(0.3)'}, 
+          from:{ transform: 'rotate(360deg) skew(0deg) scale(1)'}, 
           to:{ transform: 'rotate(0deg) skew(0deg) scale(1)'},
         }}>
-        <Paralaxer start={0} end={this.state.docHeight}>
           <span 
               animation={{
-                from:{ transform: 'translateY(-200vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(-200vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >P</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(-150vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(-150vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >a</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(-100vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(-100vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >r</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(-70vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(-70vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >a</span>
             <span 
             animation={{
-              from:{ opacity: 0.5}, 
-              to:{ opacity: 1},
+              0:{ opacity: 1},
+              50:{ opacity: 0.5}, 
+              100:{ opacity: 1},
             }}
               >l</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(70vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(70vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >a</span>
             <span 
              animation={{
-              from:{ transform: 'translateY(100vh)'}, 
-              to:{ transform: 'translateY(0)'},
+              0:{ transform: 'translateY(0vh)'},
+              50:{ transform: 'translateY(100vh)'}, 
+              100:{ transform: 'translateY(0vh)'},
             }}
               >x</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(150vh)'},
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(150vh)'},
+                100:{ transform: 'translateY(0vh)'},
               }}
               >e</span>
             <span 
               animation={{
-                from:{ transform: 'translateY(200vh)'}, 
-                to:{ transform: 'translateY(0)'},
+                0:{ transform: 'translateY(0vh)'},
+                50:{ transform: 'translateY(200vh)'}, 
+                100:{ transform: 'translateY(0vh)'},
               }}
               >r</span>
 
-            </Paralaxer>
           </h1>
         </Paralaxer>
       </div>
