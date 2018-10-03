@@ -18,8 +18,7 @@ class App extends Component {
   }
 
   onScroll() {
-    document.webkitExitFullscreen();
-    document.exitFullscreen();
+    document.webkitExitFullscreen? document.webkitExitFullscreen(): document.exitFullscreen();
   }
 
   componentWillUnmount() {
@@ -34,9 +33,9 @@ class App extends Component {
       <div className="App">
       <Paralaxer start={0} end={this.state.docHeight / 1.5}>
         <h1 
-        style={{ transformOrigin: 'top left'}}
+        style={{ transformOrigin: 'center'}}
         animation={{
-          from:{ transform: 'rotate(-360deg) skew(30deg) scale(3)'}, 
+          from:{ transform: 'rotate(180deg) skew(0deg) scale(0.3)'}, 
           to:{ transform: 'rotate(0deg) skew(0deg) scale(1)'},
         }}>
         <Paralaxer start={0} end={this.state.docHeight}>
