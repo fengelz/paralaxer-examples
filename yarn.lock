@@ -5587,8 +5587,10 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
   integrity sha512-lQe48YPsMJAig+yngZ87Lus+NF+3mtu7DVOBu6b/gHO1YpKwIj5AWjZ/TOS7i46HD/UixzWb1zeWDZfGZ3iYcg==
 
-"paralaxer@file:../../npm-modules/paralaxer":
-  version "1.0.0"
+paralaxer@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/paralaxer/-/paralaxer-1.1.0.tgz#2393a9125bb6ff14d14da062add054a777af9f41"
+  integrity sha512-0sDGMEcdMkuTsmQlDZX1cid0pbX/wL/0/DNtJcwEJbfxeSd3LUB4JDCrQ4vaZ0CUuKLq2x/yr3CKSWpB0NVz6w==
   dependencies:
     react "^16.4.1"
 
