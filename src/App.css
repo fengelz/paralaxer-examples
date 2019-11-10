@@ -1,6 +1,9 @@
 body {
   height: 400vh;
 }
+#root {
+  position: relative;
+}
 .App {
   height: 100%;
 }
